@@ -12,7 +12,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: download ngrok
+    - name: sudo
       run: sudo -i
+    - run: whoami
+    - run: hostname
     - run: lscpu
-    - run: reboot
+    - run: sleep 10
